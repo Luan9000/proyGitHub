@@ -27,7 +27,7 @@
             <input type="text" name="T2" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Valor">
         </div>
 
-        <center><button type="submit" class="btn btn-primary"name="B1">Submit</button><center>
+        <center><button type="submit" class="btn btn-primary"name="B1">Calcular</button><center>
     </form>
 </div>
 </div>
