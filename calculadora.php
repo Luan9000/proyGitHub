@@ -1,27 +1,49 @@
+<html> 
+<head> 
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Operadores Aritm&eacute;meticos</title>
-	</head>
-	<body>
-		<h1>Calculadora</h1>
-		<form action="resultado.php" method="post">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Formulario.</title> 
+</head> 
 
-			<select name="operador">
-				<option value="suma">Suma</option>
-				<option value="resta">Resta</option>
-				<option value="multiplicacion">Multiplicaci&oacute;n</option>
-				<option value="division">Divisi&oacute;n</option>
-            </select><br />
+<body> 
+  
+<center><h1>Calculadora</h1></center>
+<br>
+<center>
+<div class="container">
+<div class="col-3">
+<div class="card">
+    <div class="card-body">
+    <div class="card-auto">
+      
+    <div class="custom-select" style="width:200px;">
+            <select name="operador">
+                <option value="0">Sumar</option>
+                <option value="1">Restar</option>
+                <option value="2">Multiplicar</option>
+                <option value="3">Dividir</option>
+            </select>
+    </div>
+
+    <form method="POST" action="sumar.php">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Valor1</label>
+            <input type="text" name="valor1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese Valor">
             
-			Ingresa tu primer n&uacute;mero:<br />
-			<input type="text" name="valor1"><br />
-			Ingresa tu segundo valor:<br />
-			<input type="text" name="valor2"><br>
-			<input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
-            
-		</form>
-	</body>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Valor2</label>
+            <input type="text" name="valor2" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Valor">
+        </div>
+
+        <center><button type="submit" class="btn btn-primary"name="B1">Enviar</button><center>
+        
+    </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</center>
+</body>
 </html>

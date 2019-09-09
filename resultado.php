@@ -1,4 +1,5 @@
 <?php 
+
 	if ($_POST ["valor1"] !="" and $_POST ["valor2"]!=""){
 		if ($_POST["operador"] == "suma") {
 			print ($resultado = $_POST ["valor1"] + $_POST ["valor2"]);

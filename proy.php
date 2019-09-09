@@ -15,7 +15,16 @@
 <div class="card">
     <div class="card-body">
     <div class="card-auto">
-        
+      
+    <div class="custom-select" style="width:200px;">
+            <select>
+                <option value="0">Sumar</option>
+                <option value="1">Restar</option>
+                <option value="2">Multiplicar</option>
+                <option value="3">Dividir</option>
+            </select>
+    </div>
+
     <form method="POST" action="sumar.php">
         <div class="form-group">
             <label for="exampleInputEmail1">Valor1</label>
@@ -27,7 +36,8 @@
             <input type="text" name="T2" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Valor">
         </div>
 
-        <center><button type="submit" class="btn btn-primary"name="B1">Calcular</button><center>
+        <center><button type="submit" class="btn btn-primary"name="B1">Enviar</button><center>
+        
     </form>
 </div>
 </div>
